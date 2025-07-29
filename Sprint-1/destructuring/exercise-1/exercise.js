@@ -12,4 +12,6 @@ function introduceYourself(___________________________) {
   );
 }
 
+const {name, age, favouriteFood} = personOne
+
 introduceYourself(personOne);
