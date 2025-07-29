@@ -70,3 +70,21 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+
+/*
+## Task 1
+- In `exercise.js` write a program that will take the `hogwarts` array as input and display the names of the people who belong to the Gryffindor house.
+- Use object destructuring to extract the values you need out of each element in the array.*/
+
+function hogwartsSchool(hogwarts){
+  const grinffindors = []
+  for(const person of hogwarts){
+    const {firstName, lastName, house} = person;
+    if(house ==="Gryffindor" ){
+      grinffindors.push(`${firstName} ${lastName}`);
+    }
+  }
+  return grinffindors;
+}
+
+// console.log(hogwartsSchool(hogwarts))
